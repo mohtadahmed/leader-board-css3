@@ -10,7 +10,8 @@ nav {
     display: flex;
     justify-content: space-around;
     background-color: #562EFF;
-    padding: 30px 50px;
+    column-gap: 12em;
+    padding: 30px 10px;
 }
 
 .icon {
@@ -40,8 +41,9 @@ nav {
 /* Header Section & Navigation Bar CSS */
 
 /* Top Player Section CSS */
-.top-player-container {
-    width: 60%;
+.top-player-container,
+.course-container {
+    width: 70%;
     padding: 30px 10px;
     margin: 40px auto;
     background-color: white;
@@ -85,7 +87,8 @@ hr {
 .blog-card-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
+    row-gap: 1em;
+    column-gap: 3em;
 }
 
 .blog-card {
@@ -102,6 +105,10 @@ hr {
     height: 100px;
 }
 
+.blog-info {
+    width: 80%;
+}
+
 .blog-info p {
     color: gray;
 }
@@ -111,3 +118,61 @@ hr {
 }
 
 /* Top Blog Section CSS */
+
+
+/* Latest Course Section CSS */
+.course-card-container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.course-card {
+    padding: 10px;
+    margin-right: 20px;
+    box-shadow: 5px 5px 10px 6px rgb(238, 238, 238);
+    border-radius: 10px;
+}
+
+.course-img {
+    margin: 0 auto;
+}
+
+.course-img img {
+    height: 110px;
+}
+
+.course-info p {
+    color: coral;
+}
+
+.course-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .course-rating span {
+    margin-right: 10px;
+} */
+
+.course-hour {
+    color: #FF4A60;
+    background-color: #FFE4E8;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.fa-star {
+    color: #FFC014;
+    font-size: 0.75em;
+}
+
+.fa-star:last-child {
+    color: lightgray;
+}
+
+/* Latest Course Section CSS */
