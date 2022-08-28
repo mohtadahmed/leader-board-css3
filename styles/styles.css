@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -6,61 +6,108 @@ body{
 }
 
 /* Header Section & Navigation Bar CSS */
-nav{
+nav {
     display: flex;
     justify-content: space-around;
     background-color: #562EFF;
     padding: 30px 50px;
 }
-.icon{
+
+.icon {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
 }
-.icon img{
+
+.icon img {
     height: 50px;
     margin-right: 20px;
 }
-.links{
+
+.links {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.links a{
+
+.links a {
     text-decoration: none;
     color: white;
     margin-right: 30px;
 }
+
 /* Header Section & Navigation Bar CSS */
 
 /* Top Player Section CSS */
-.top-player-container{
+.top-player-container {
     width: 60%;
     padding: 30px 10px;
     margin: 40px auto;
     background-color: white;
     border-radius: 5px;
 }
-.title{
-    margin-left: 100px;
+
+.title {
+    padding-left: 2em;
     color: #562EFF;
 }
-.palyer-section{
+
+.palyer-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-.player-card{
+
+.player-card {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.player-card img{
+
+.player-card img {
     height: 80px;
     margin-right: 10px;
 }
-hr{
-    width: 80%;
+
+hr {
+    width: 85%;
 }
+
 /* Top Player Section CSS */
+
+/* Top Blog Section CSS */
+.top-blog-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.blog-card-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.blog-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-img {
+    margin-right: 20px;
+}
+
+.blog-img img {
+    height: 100px;
+}
+
+.blog-info p {
+    color: gray;
+}
+
+.blog-info span {
+    color: #562EFF;
+}
+
+/* Top Blog Section CSS */
