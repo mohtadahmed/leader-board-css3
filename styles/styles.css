@@ -1,9 +1,21 @@
+/* General CSS */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
 }
+
+.container {
+    /* width: 62%; */
+    width: 870px;
+    padding: 10px 10px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* General CSS */
 
 /* Header Section & Navigation Bar CSS */
 nav {
@@ -41,15 +53,6 @@ nav {
 /* Header Section & Navigation Bar CSS */
 
 /* Top Player Section CSS */
-.container {
-    /* width: 62%; */
-    width: 870px;
-    padding: 10px 10px;
-    margin: 40px auto;
-    background-color: white;
-    border-radius: 5px;
-}
-
 .title {
     padding-left: 2em;
     color: #562EFF;
@@ -78,6 +81,8 @@ hr {
 }
 
 /* Top Player Section CSS */
+
+
 
 /* Top Blog Section CSS */
 .blog-card-section {
@@ -176,7 +181,11 @@ hr {
         Resposive CSS 
 ===============================*/
 
-@media screen and (max-width: 576px) {
+/* Media Query:
+Responsive CSS Tag uses for Small devices such as Mobile phones
+*/
+
+@media only screen and (max-width: 576px) {
     nav {
         width: 100%;
         display: block;
@@ -201,7 +210,8 @@ hr {
         margin-left: 0;
     }
 
-    .player-card {
+    .player-card,
+    .blog-card {
         flex-direction: column;
     }
 
@@ -211,10 +221,6 @@ hr {
 
     .blog-card-section {
         padding: 10px;
-    }
-
-    .blog-card {
-        flex-direction: column;
     }
 
     .blog-img {
@@ -242,6 +248,10 @@ hr {
 
 }
 
+
+/* Media Query:
+Responsive CSS Tag uses for Medium Devices like Tablet, Ipad or others
+*/
 
 @media screen and (max-width: 992px) and (min-width: 577px) {
     nav {
@@ -279,6 +289,9 @@ hr {
     }
 }
 
+/* Media Query Declaration:
+Responsive CSS Tag used for Medium large devices like Medium Laptops or Medium Screens
+ */
 @media screen and (max-width: 1024px) and (min-width: 993px) {
     nav {
         justify-content: space-around;
