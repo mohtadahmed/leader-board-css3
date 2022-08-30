@@ -41,7 +41,7 @@ nav {
 /* Header Section & Navigation Bar CSS */
 
 /* Top Player Section CSS */
-.container{
+.container {
     /* width: 62%; */
     width: 870px;
     padding: 10px 10px;
@@ -168,4 +168,68 @@ hr {
     color: lightgray;
 }
 
-/* Latest Course Section CSS */
+/* Latest Course Section CSS *
+
+
+
+/* ===========================
+        Resposive CSS 
+===============================*/
+
+@media screen and (max-width: 576px) {
+    nav {
+        width: 100%;
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .title {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .palyer-section,
+    .blog-card-section,
+    .course-card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .palyer-section {
+        margin-left: 0;
+    }
+
+    .player-card {
+        flex-direction: column;
+    }
+
+    .blog-card-section {
+        padding: 10px;
+    }
+
+    .blog-card {
+        flex-direction: column;
+    }
+
+    .blog-img img {
+        height: 70px;
+    }
+
+    .blog-info {
+        text-align: center;
+    }
+
+    .course-card-container {
+        grid-row-gap: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) and (min-width: 577px) {}
+
+/* ============================
+        Resposive CSS 
+===============================*/
